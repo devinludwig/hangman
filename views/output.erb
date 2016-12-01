@@ -1,0 +1,11 @@
+<h1>Guess a letter, Player 2!</h1>
+
+<h2>
+  <% @letters.each() do |letter| %>__ <% end %>
+</h2>
+
+<form action="/guess" method="post">
+  <label for="letter">letter:</label>
+  <input id="letter" name="letter" type="text">
+  <button type="submit">Guess!</button>
+</form>
